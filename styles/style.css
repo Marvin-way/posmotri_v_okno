@@ -13,7 +13,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -36,4 +36,34 @@ ul,
 ol {
   list-style: none;
 }
-
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 133px 30px;
+  gap: 30px;
+  min-width: 1140px;
+  height: 534px;
+}
+.result__video {
+  width: 100%;
+}
+.result__video-container {
+  margin-top: 70px;
+  width: 711px;
+  height: 386px;
+}
+.search-form {
+  line-height: 22px;
+  width: 100%;
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.content__list {
+  width: 388px;
+  overflow: hidden scroll;
+}
+.content__details {
+  height: 534px;
+  overflow-y: scroll;
+}
