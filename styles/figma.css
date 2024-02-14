@@ -1,0 +1,11 @@
+/* preview */
+
+width: 194px;
+height: 103px;
+
+background: url(image.png);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
