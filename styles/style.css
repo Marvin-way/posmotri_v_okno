@@ -217,7 +217,7 @@ ol {
 }
 .content__video-card:focus-visible {
   outline: 1px solid #fff;
-  outline-offset: 2px; 
+  outline-offset: 2px;
 }
 .content__video-card-description-container {
   padding-left: 2px;
@@ -232,7 +232,7 @@ ol {
 }
 .content__video-card:active {
   background-color: #545050;
-} 
+}
 .content__card-link {
   display: block;
 }
