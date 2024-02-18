@@ -52,9 +52,10 @@ ol {
 
 .content {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   margin: auto;
+  gap: 30px;
   min-width: 1140px;
 }
 
@@ -75,7 +76,6 @@ ol {
   line-height: 22px;
   width: 100%;
   margin-top: 16px;
-  /* height: 54px; */
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -94,7 +94,7 @@ ol {
 }
 
 .content__details {
-  width: max-content;
+  width: 100%;
   height: max-content;
 }
 
@@ -129,12 +129,16 @@ ol {
 .search-form__label {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 5px;
   box-shadow: none;
   border: none;
   width: fit-content;
 }
 
+.search-form__label:hover {
+  cursor: pointer
+}
 .search-form__textfield {
   background-color: transparent;
   align-self: self-start;
