@@ -41,7 +41,6 @@ ol {
 }
 
 .visually-hidden {
-  display: none;
   position: absolute;
   inline-size: 1px;
   block-size: 1px;
@@ -89,7 +88,7 @@ ol {
 
 .content__list {
   position: relative;
-  width: 399px;
+  width: 100%;
   height: 16.33em;
   overflow: auto;
 }
@@ -97,7 +96,6 @@ ol {
 .content__details {
   width: max-content;
   height: max-content;
-  overflow: auto;
 }
 
 .title {
@@ -130,6 +128,7 @@ ol {
 
 .search-form__label {
   display: flex;
+  justify-content: space-between;
   gap: 5px;
   box-shadow: none;
   border: none;
@@ -159,7 +158,7 @@ ol {
   border: 1px solid #fff;
 }
 
-.search-form__pseudo-checkbox:checked {
+.search-form__checkbox:checked + .search-form__pseudo-checkbox {
   background-color: #fff;
   border: none;
   height: 15px;
@@ -183,7 +182,7 @@ ol {
   outline-offset: 1px;
 }
 
-.search-form__label:hover {
+.search-form__label:hover .search-form__label-text {
   cursor: pointer;
   text-decoration: underline;
 }
@@ -241,7 +240,7 @@ ol {
 
 .content__card-link:focus-visible {
   outline: 1px solid #fff;
-  outline-offset: 2px;
+  outline-offset: 1px;
 }
 
 .content__video-card-description-container {
